@@ -23,22 +23,28 @@
     
     <header class="header_area">
         <div class="main-menu">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#"><img src="img/liberenlos_logo.png" alt="logo"></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNav"> 
-                    <div class="me-auto"></div>                  
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Genera un Habeas Corpus</a>
-
-                    </ul>
-                  </div>
-                </div>
-              </nav>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="img/liberenlos_logo.png" alt="logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+              <div class="me-auto"></div>
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Genera un Habeas Corpus</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">¿Que es el Habeas Corpus?</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">¿Como interponerlo?</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         </div>
     </header>
 
@@ -53,17 +59,17 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-7 col-md-14">
-             <h2>Generador de Habeas Corpus</h2>
+             <h2 class="formName">Generador de Habeas Corpus</h2>
              <p><strong>Constitución Política. Art. 30. </strong>“Quien estuviere privado de su libertad, y creyere estarlo ilegalmente, tiene derecho a invocar ante cualquier autoridad judicial, en todo tiempo, por sí o por interpuesta persona, el Habeas Corpus, el cual debe resolverse en el término de treinta y seis horas”.
             </p>
+              <small>Tus datos no seran almacenados en un servidor.</small>
+              <br>
              <small>Los campos obligatorios van seguidos de <strong><abbr title ="Obligatorio">*</abbr></strong></small>
-             <br>
-             <small>Tus datos no seran almacenados en algun servidor</small>
-
+ 
              <!-- ================================ Start Datos Del Solicitante  =========================== -->
-             <section class="section-solicitante">
-               <form id="info_solicitante">
-               <h3>Información del solicitante</h3>
+             <section class="sectionSolicitante">
+               <form id="infoSolicitante">
+               <h3 class="formTitle">Información del solicitante</h3>
                 <div class="datos-solicitante">
                     <div class="input-group mb-3">
                           <span class="input-group-text" id="basic-addon1">Nombre del solicitante<abbr title ="Obligatorio">*</abbr></strong></span>
@@ -74,15 +80,15 @@
                       <input type="mail" class="form-control" placeholder="Tu correo electrónico" aria-label="Nombre completo" aria-describedby="basic-addon1" required>
                     </div>
                     <div class="input-group mb-3">
-                      <span class="input-group-text" id="genero_solicitante">Género</span>
-                      <select class="form-select" aria-label="Selecciona tu género">
+                      <span class="input-group-text" id="genero_solicitante">Género<abbr title ="Obligatorio">*</abbr></strong></span>
+                      <select class="form-select" aria-label="Selecciona tu género" required>
                         <option value="1">Masculino</option>  
                         <option value="2">Femenino</option>
                         <option value="3">Otro</option>
                       </select>
                     </div>
                     <div class="input-group mb-3">
-                      <span class="input-group-text" id="basic-addon1">Documento de identidad del solicitante<abbr title ="Obligatorio">*</abbr></strong></span>
+                      <span class="input-group-text" id="basic-addon1">Documento de identidad<abbr title ="Obligatorio">*</abbr></strong></span>
                       <select class="form-select" id="tipo_documento" required>
                         <option value="1">C.C</option>
                         <option value="2">T.I</option>
@@ -91,8 +97,8 @@
                       <input type="text" minlenght="6" maxlength="10" class="form-control" placeholder="Numero de documento" aria-describedby="selectaria" required>
                     </div>
                     <div class="input-group mb-3">
-                      <span class="input-group-text">¿Eres mayor de edad?</span>
-                      <select class="form-select" aria-label="Mayoría de edad">
+                      <span class="input-group-text">¿Eres mayor de edad?<abbr title ="Obligatorio">*</abbr></strong></span>
+                      <select class="form-select" aria-label="Mayoría de edad" required>
                         <option value="1">Sí</option>
                         <option value="2">No</option>
                       </select>
@@ -107,7 +113,7 @@
                       </select>
                     </div>         
                     <div class="input-group mb-3">
-                      <span class="input-group-text" id="basic-addon1">Numero de celular del solicitante<abbr title ="Obligatorio">*</abbr></strong></span>
+                      <span class="input-group-text" id="basic-addon1">Numero de celular<abbr title ="Obligatorio">*</abbr></strong></span>
                       <input type="tel" class="form-control" placeholder="Tranquil@, no almacenamos tu información" aria-label="numero" aria-describedby="basic-addon1" required>
                     </div>
                     <div class="input-group mb-3">
@@ -129,52 +135,56 @@
              </section>
              <!-- ================================ End Datos Del Solicitante  =========================== -->
              <!-- ================================ Start Datos Del Agredido  =========================== -->
-             <section class="section-agredido">
-              <form id="info_agredido1">
-              <h3>Información del agredido</h3>          
+             <section class="sectionAgredido">
+              <form id="infoAgredido1">
+              <h3 class="formTitle">Información del agredido</h3>          
                <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">Nombre del agredido</span>
+                <span class="input-group-text" id="basic-addon1">Nombre del agredido<abbr title ="Obligatorio">*</abbr></strong></span>
                 <input type="text" class="form-control" placeholder="¿A quien privaron de su libertad?" aria-label="nombre-agredido" aria-describedby="basic-addon1" required>
               </div>
               <div class="input-group mb-3">
-                <span class="input-group-text" id="genero_agredido">Género</span>
-                <select class="form-select" aria-label="Selecciona tu género">
+                <span class="input-group-text" id="genero_agredido">Género<abbr title ="Obligatorio">*</abbr></strong></span>
+                <select class="form-select" aria-label="Selecciona tu género" required>
                   <option value="1">Masculino</option>  
                   <option value="2">Femenino</option>
                   <option value="3">Otro</option>
                 </select>
               </div>
                <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">Autoridad que realizó la detención</span>
+                <span class="input-group-text" id="basic-addon1">Autoridad que realizó la detención<abbr title ="Obligatorio">*</abbr></strong></span>
                 <input type="text" class="form-control" placeholder="¿Quien hizo la detención?" aria-label="nombre-autoridad" aria-describedby="basic-addon1" required>              
               </div>
               <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">N° de identificación de la autoridad</span>
-                <input type="text" class="form-control" placeholder="¿Conoces el #?" aria-label="nombre-autoridad" aria-describedby="basic-addon1">
-                <select class="form-select" id="numero_identificacion">
+                <span class="input-group-text" id="basic-addon1">¿Sabes cual es su N° de identificación?</span>
+                <select class="form-select" id="numero_identificacion" required>
                   <option value="1">Sí</option>
                   <option value="2">No</option>
                 </select>
+                <input type="text" class="form-control" placeholder="¿Cual es?" aria-label="identificacion-autoridad" aria-describedby="basic-addon1">
               </div>
                <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">Autoridad que ordenó la detención</span>
-                <input type="text" class="form-control" placeholder="¿Sabes quien dio la orden?" aria-label="nombre-autoridad" aria-describedby="basic-addon1">
-                <select class="form-select" id="numero_identificacion">
+                <span class="input-group-text" id="basic-addon1">¿Sabes que autoridad ordenó la detención?</span>
+                <select class="form-select" id="numero_identificacion" required>
                   <option value="1">Sí</option>
                   <option value="2">No</option>
-                </select>              
+                </select>   
+                <input type="text" class="form-control" placeholder="¿Quien dio la orden?" aria-label="orden-autoridad" aria-describedby="basic-addon1">           
               </div>
               <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">Lugar de la detención</span>
+                <span class="input-group-text" id="basic-addon1">Lugar de la detención<abbr title ="Obligatorio">*</abbr></span>
                 <input type="text" class="form-control" placeholder="¿Donde se realizo la detención?" aria-label="detencion-lugar" aria-describedby="basic-addon1" required>
               </div>
               <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">Fecha y hora más exacta posible</span>
+                <span class="input-group-text" id="basic-addon1">Fecha y hora más exacta posible<abbr title ="Obligatorio">*</abbr></span>
                 <input type="datetime-local" class="form-control" aria-label="detencion-fecha" aria-describedby="basic-addon1" required>
               </div>
               <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">¿Cuantos dias han transcurrido desde la detención?</span>
+                <span class="input-group-text" id="basic-addon1">¿Cuantos dias han transcurrido desde la detención?<abbr title ="Obligatorio">*</abbr> (min: 0)</span>
                 <input type="number"  min="0" placeholder="# de días" class="form-control" aria-label="detencion-fecha" aria-describedby="basic-addon1" required>
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Lugar de reclusión<abbr title ="Obligatorio">*</abbr></span>
+                <input type="text" class="form-control" placeholder="¿Donde se encuentra recluida?" aria-label="reclusion-lugar" aria-describedby="basic-addon1" required>
               </div>
               </form> 
              </section>
@@ -182,19 +192,28 @@
              <!-- ================================ Start Hechos =========================== -->
              <section class="sectionHechos">
               <form id="formHechos">
-               <h3>Hechos</h3>
+               <h3 class="formTitle">Hechos</h3>
                <p>Por favor, relata de forma concreta y clara cada uno de los hechos relevantes respecto de la detención arbitraria</p>
                 <div class="input-group">
-                <span class="input-group-text">¿Que ocurrió?</span>
-                <textarea id="textoHechos" class="form-control" aria-label="hechos" rows="2" ></textarea>
+                <span class="input-group-text">¿Que ocurrió?<abbr title ="Obligatorio">*</abbr></strong></span>
+                <textarea id="textoHechos" class="form-control" aria-label="hechos" rows="2" required></textarea>
                 </div>
              </form>
              </section>
              <!-- ================================ End Hechos  =========================== -->
+             <!-- ================================ Start Juramento  =========================== -->
+             <section class="aceptarJuramento">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="1" id="checkJuramento">
+                <label class="form-check-label" for="checkJuramento">
+                  Manifiesto bajo la gravedad del juramento que ningún juez ha asumido el conocimiento de otra petición de habeas corpus ni decidido sobre la misma.
+                </label>   
+             </section>
+             <!-- ================================ End Juramento  =========================== -->
           <!-- ================================ Start Enviar  =========================== -->
           <br>
           <section class="generarHabeas">
-              <button id="boton_generar " type="button" class="btn btn-warning">Generar el Habeas Corpus</button>
+              <button id="botonGenerar " type="button" class="btn btn-warning">Generar el Habeas Corpus</button>
             </div>
           </section> 
           </div>
@@ -206,25 +225,24 @@
     </main>
 
   <!-- ================================ End Main Area =========================== -->
-  <!-- ================================ Start Footer =========================== -->
-  <footer class="bg-light text-center text-lg-start">
-
-    <!-- Start Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2021 Copyright:
-    <a class="text-dark" href="https://instagram.com/mateocostab">Mateo Costa</a>
-    <a>&</a>
-    <a class="text-dark" href="instagram.com/jesuspinilla_/">Jesus Pinilla</a>
-    </div>
-    <!-- End Copyright -->
-    </footer>
-
-  <!-- ================================ End Footer =========================== -->
-    
-   
   <!-- JQuery JS File -->
   <script src="/js/jquery.3.6.0.js"></script>
   <!-- JS Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
+  <!-- ================================ Start Footer =========================== -->
+  <footer class="bg-light text-center text-lg-start">
+
+    <!-- Start Copyright -->
+    <div class="text-center p-3">
+    © 2021 Copyright:
+    <a class="footerName" href="https://instagram.com/mateocostab">Mateo Costa</a>
+    <a>&</a>
+    <a class="footerName" href="https://instagram.com/jesuspinilla_/">Jesus Pinilla</a>
+    <h6 class="footerText">El modelo de Habeas Corpus fue publicado por Iván Daniel Otero Suárez, profesor de la Universidad Externado de Colombia</h6> 
+    </div>
+    <!-- End Copyright -->
+    </footer>
+
+  <!-- ================================ End Footer =========================== -->
 </html>
