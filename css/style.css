@@ -1,0 +1,42 @@
+
+/* import fonts from fonts.css */
+@import url(fonts.css);
+
+/* css variables */
+
+@import url(./partials/_variables.css);
+
+
+
+/* start mavigation */
+
+.header_area .main-menu .navbar .navbar-brand
+{
+    padding: 0 1rem 0 2.5rem;
+}
+
+.header_area .main-menu .navbar
+{
+    padding: 0.5rem 10rem;
+}    
+
+.header_area .main-menu .nav-item .nav-link
+{
+    font: normal 400 15px/2px var(--montserrat);
+    font-family: var(--montserrat);
+    padding: 1.7rem;
+    color: var(--primary-color);
+}
+
+.header_area .main-menu .navbar-nav .active a{
+    color: var(--primary-color);
+    background-color: transparent;   
+    
+}
+.header_area .main-menu .navbar-nav a:hover{
+    color: var(--text-color);
+    background-color: transparent;
+        
+}
+
+/* end navigation */
