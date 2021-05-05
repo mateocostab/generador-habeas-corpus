@@ -55,7 +55,10 @@
         <div class="row">
           <div class="col-lg-7 col-md-14">
              <h2>Generador de Habeas Corpus</h2>
-             <p>Los campos obligatorios van seguidos de <strong><abbr title ="Obligatorio">*</abbr></strong></p>
+             <p><strong>Constitución Política. Art. 30. </strong>“Quien estuviere privado de su libertad, y creyere estarlo ilegalmente, tiene derecho a invocar ante cualquier autoridad judicial, en todo tiempo, por sí o por interpuesta persona, el Habeas Corpus, el cual debe resolverse en el término de treinta y seis horas”.
+            </p>
+             <small>Los campos obligatorios van seguidos de <strong><abbr title ="Obligatorio">*</abbr></strong></small>
+             <br>
              <small>Tus datos no seran almacenados en algun servidor</small>
 
              <!-- ================================ Start Datos Del Solicitante  =========================== -->
@@ -134,17 +137,17 @@
                 <span class="input-group-text" id="basic-addon1">Nombre del agredido</span>
                 <input id="iAgredido" type="text" class="form-control" placeholder="¿A quien privaron de su libertad?" aria-label="nombre-agredido" aria-describedby="basic-addon1" required>
               </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="genero_agredido">Género</span>
+                <select class="form-select" aria-label="Selecciona tu género">
+                  <option value="1">Masculino</option>  
+                  <option value="2">Femenino</option>
+                  <option value="3">Otro</option>
+                </select>
+              </div>
                <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">Autoridad que realizó la detención</span>
                 <input id="iAutoridadRealizo" type="text" class="form-control" placeholder="¿Quien hizo la detención?" aria-label="nombre-autoridad" aria-describedby="basic-addon1" required>              
-              </div>
-               <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">Autoridad que ordenó la detención</span>
-                <input id="iAutoridadOrdeno" type="text" class="form-control" placeholder="¿Sabes quien dio la orden?" aria-label="nombre-autoridad" aria-describedby="basic-addon1" required>
-                <select class="form-select" id="iNumeroIdentificacion">
-                  <option value="1">Sí</option>
-                  <option value="2">No</option>
-                </select>              
               </div>
               <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">N° de identificación de la autoridad</span>
@@ -153,6 +156,14 @@
                   <option value="1">Sí</option>
                   <option value="2">No</option>
                 </select>
+              </div>
+               <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Autoridad que ordenó la detención</span>
+                <input type="text" class="form-control" placeholder="¿Sabes quien dio la orden?" aria-label="nombre-autoridad" aria-describedby="basic-addon1">
+                <select class="form-select" id="numero_identificacion">
+                  <option value="1">Sí</option>
+                  <option value="2">No</option>
+                </select>              
               </div>
               <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">Lugar de la detención</span>
@@ -169,9 +180,26 @@
               </form> 
              </section>
              <!-- ================================ End Datos Del Agredido  =========================== -->
-          <!-- ================================ Start Enviar  =========================== --> 
-          <button id="boton_generar " type="button" class="btn btn-warning">Generar el Habeas Corpus</button> 
-          </div> 
+             <!-- ================================ Start Hechos =========================== -->
+             <section class="sectionHechos">
+              <form id="formHechos">
+               <h3>Hechos</h3>
+               <p>Por favor, relata de forma concreta y clara cada uno de los hechos relevantes respecto de la detención arbitraria</p>
+                <div class="input-group">
+                <span class="input-group-text">¿Que ocurrió?</span>
+                <textarea id="textoHechos" class="form-control" aria-label="hechos" rows="2" ></textarea>
+                </div>
+             </form>
+             </section>
+             <!-- ================================ End Hechos  =========================== -->
+          <!-- ================================ Start Enviar  =========================== -->
+          <br>
+          <section class="generarHabeas">
+              <button id="boton_generar " type="button" class="btn btn-warning">Generar el Habeas Corpus</button>
+            </div>
+          </section> 
+          </div>
+          <!-- ================================ End Enviar  =========================== -->
         </div>
       </div>
     </section>       
@@ -179,6 +207,20 @@
     </main>
 
   <!-- ================================ End Main Area =========================== -->
+  <!-- ================================ Start Footer =========================== -->
+  <footer class="bg-light text-center text-lg-start">
+
+    <!-- Start Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021 Copyright:
+    <a class="text-dark" href="https://instagram.com/mateocostab">Mateo Costa</a>
+    <a>&</a>
+    <a class="text-dark" href="instagram.com/jesuspinilla_/">Jesus Pinilla</a>
+    </div>
+    <!-- End Copyright -->
+    </footer>
+
+  <!-- ================================ End Footer =========================== -->
     
    
   <!-- JQuery JS File -->
