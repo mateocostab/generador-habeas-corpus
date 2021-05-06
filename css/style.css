@@ -23,7 +23,7 @@
 /* end navigation */
 
 .container-fluid{
-    display:absolute;
+    display: relative;
 }
 
 
@@ -34,7 +34,10 @@
   background: white;
 }
 
-
+.form-group{
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
 .formName{
     padding-top: 5%;
     padding-bottom: 5%;
@@ -72,4 +75,8 @@ footer {
     position: relative;
 
 }
-html, body { overflow-x: hidden; }
+.form-control-inline {
+    min-width: 0;
+    width: auto;
+    display: inline;
+}
