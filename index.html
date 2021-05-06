@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>¡LIBÉRENLOS! Generador de Hábeas Corpus</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- css bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <!-- custom css -->
@@ -50,19 +50,20 @@
 
     <!-- ================================ Start Generator  =========================== -->
     <section class="generador">
-      <div class="container-fluid text-center">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-md-7 col-sm-12">
              <h2 class="formName">Generador de Hábeas Corpus</h2>
-
-              <small>Tus datos no seran almacenados en un servidor.</small>
-              <br>
-             <small>Los campos obligatorios van seguidos de <strong><abbr title ="Obligatorio">*</abbr></strong></small>
- 
+             <p>
+               <strong>Constitución Política. Art. 30.</strong>“Quien estuviere privado de su libertad, y creyere estarlo ilegalmente, tiene derecho a invocar ante cualquier autoridad judicial, en todo tiempo, por sí o por interpuesta persona, el Hábeas Corpus, el cual debe resolverse en el término de treinta y seis horas”.
+             </p>
+                <small class="smallText">Tus datos no seran almacenados en un servidor.</small>
+                <br>
+                <small class="smallText">Los campos obligatorios van seguidos de <strong><abbr title ="Obligatorio">*</abbr></strong></small>
              <!-- ================================ Start Datos Del Solicitante  =========================== -->
              <section class="sectionSolicitante">
                <form id="infoSolicitante">
-               <h3 class="formTitle">Información del solicitante</h3>
+               <h3 class="formTitle ">Información del solicitante</h3>
                 <div class="datos-solicitante">
                     <div class="input-group mb-3">
                           <span class="input-group-text" id="basic-addon1">Nombre del solicitante<abbr title ="Obligatorio">*</abbr></strong></span>
@@ -134,7 +135,7 @@
              <!-- ================================ Start Datos Del Agredido  =========================== -->
              <section class="sectionAgredido">
               <form id="infoAgredido1">
-              <h3 class="formTitle">Información del agredido</h3>          
+              <h3 class="formTitle ">Información del agredido</h3>          
                <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">Nombre del agredido<abbr title ="Obligatorio">*</abbr></strong></span>
                 <input id="iNombreA" type="text" class="form-control" placeholder="¿A quien privaron de su libertad?" aria-label="nombre-agredido" aria-describedby="basic-addon1" required>
@@ -189,7 +190,7 @@
              <!-- ================================ Start Hechos =========================== -->
              <section class="sectionHechos">
               <form id="formHechos">
-               <h3 class="formTitle">Hechos</h3>
+               <h3 class="formTitle ">Hechos</h3>
                <p>Por favor, relata de forma concreta y clara cada uno de los hechos relevantes respecto de la detención arbitraria</p>
                 <div class="input-group">
                 <span class="input-group-text">¿Que ocurrió?<abbr title ="Obligatorio">*</abbr></strong></span>
