@@ -10,28 +10,33 @@
 
 /* start mavigation */
 
-.header_area .main-menu .navbar .navbar-brand
-{
-    padding: 0 1em 0 2.5em;
-}
+    .header_area .main-menu .navbar .navbar-brand
+    {
+        padding: 0 1em 0 2.5em;
+    }
 
-.header_area .main-menu .navbar
-{
-    padding: 0.5rem 1rem;
-}    
+    .header_area .main-menu .navbar
+    {
+        padding: 0.5rem 1rem;
+    }  
 
+    @media only screen and (max-width: 768px) {
+        .header_area .main-menu .navbar .navbar-brand
+        {
+            padding: 1%;
+            width: 100%;
+        }
+    
+        .header_area .main-menu .navbar
+        {
+            padding: 1%;
+            width: 100%;
+        }    
 
 /* end navigation */
 
 /* start body */
 
-.site-main{
-  display: flex;
-  padding-top: 3%;
-  padding-left: 10%;
-  padding-right: 10%;
-  background: white;
-}
 .generador{
   justify-content: center;
   align-items: center;
@@ -55,4 +60,11 @@
 .textArea .textTitle{
     padding-top: 5%;
     padding-bottom: 5%;
+}
+
+/* start footer */
+@media only screen and (max-width: 768px) {
+    .footerBar{
+    width: 100%;
+    }
 }
