@@ -30,8 +30,8 @@ document.getElementById('botonGenerar').onclick=function(){
         iFecha = document.getElementById('iFecha').value,
         iDiasTrans = document.getElementById('iDiasTrans').value,
         iCiudadS = document.getElementById('iCiudadS').value,
-        iCiudadCC=document.getElementById('iCiudadCC').value,
-        idAutoridad= document.getElementById('idAutoridad').value,
+        iCiudadCC = document.getElementById('iCiudadCC').value,
+        idAutoridad = document.getElementById('idAutoridad').value,
         iHechos = document.getElementById('textoHechos').value
 
         //Selects
@@ -159,7 +159,7 @@ document.getElementById('botonGenerar').onclick=function(){
         }
         //Caso 3
     else{
-        doc.text("Yo,"+ iNombre + ', en mi condición de ' + iCondicionDe+', mayor y vecine de la ciudad de' + iCiudad + ', identificade con cédula de ciudadanía'+ iNumeroCC +'de'+ iCiudadCC + ', por medio del presente escrito acudo ante la autoridad judicial para solicitar se sirva dar trámite a la petición de HÁBEAS CORPUS en favor de ' + iAgredido + ', con fundamento en los siguientes:',20,65)
+        doc.text("Yo,"+ iNombre + ', en mi condición de ' + iCondicionDe +', mayor y vecine de la ciudad de' + iCiudad + ', identificade con cédula de ciudadanía'+ iNumeroCC +'de'+ iCiudadCC + ', por medio del presente escrito acudo ante la autoridad judicial para solicitar se sirva dar trámite a la petición de HÁBEAS CORPUS en favor de ' + iAgredido + ', con fundamento en los siguientes:',20,65)
     
             if(iSituacion.value === '1'){
                 doc.text(iNombre + 'fue aprendide por' + iAutoridadRealizo + 'el pasado' + iFecha + 'en' + iCiudad + 'por orden de' + iAutoridadOrdeno +  '. Desde entonces hasta la fecha han transcurrido' + iDiasTrans +', sin que le misme haya sido indagade o resuelta su situación jurídica.',10,105)
