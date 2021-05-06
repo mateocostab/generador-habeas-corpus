@@ -1,0 +1,14 @@
+@media all and (max-width: 812px) {
+    .container-fluid {
+        padding:0; /* Extend your menu really full width without padding of container-fluid */
+    }
+    .navbar-nav {
+        margin:0; /* Center your menu with current 100% width available */
+    }
+    .navbar .nav > li {
+        display: block;
+    }
+    .navbar .nav > li  img {
+        margin: auto;
+    }
+}

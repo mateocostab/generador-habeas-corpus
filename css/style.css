@@ -19,37 +19,26 @@
     {
         padding: 0.5rem 1rem;
     }  
-
-    @media only screen and (max-width: 768px) {
-        .header_area .main-menu .navbar .navbar-brand
-        {
-            padding: 1%;
-            width: 100%;
-        }
-    
-        .header_area .main-menu .navbar
-        {
-            padding: 1%;
-            width: 100%;
-        }
-    }    
-
+     
 /* end navigation */
 
-/* start body */
-
-.site-main{
-  display: flex;
+.container-fluid{
+    display:absolute;
 }
+
+
 .generador{
-  justify-content: center;
-  align-items: center;
   padding-top: 3%;
   padding-left: 10%;
   padding-right: 10%;
   background: white;
 }
 
+
+.formName{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
 .formTitle{
     padding-top: 5%;
     padding-bottom: 5%;
@@ -78,8 +67,9 @@
 }
 
 /* start footer */
-@media only screen and (max-width: 768px){
-    .footerBar{
-    width: 100%;
-    }
+   
+footer {
+    position: relative;
+
 }
+html, body { overflow-x: hidden; }
