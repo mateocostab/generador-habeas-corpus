@@ -8,7 +8,9 @@
     <!-- css bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <!-- custom css -->
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css">       
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css">   
+    <!--  Responsive css -->
+    <link rel="stylesheet" href="./css/responsive.css">    
 </head>
 <body>
   <!-- ================================ Start Header =========================== -->
@@ -50,10 +52,9 @@
     <section class="generador">
       <div class="container">
         <div class="row">
-          <div class="col-lg-7 col-md-14">
+          <div class="col-lg-8 col-md-16">  
              <h2 class="formName">Generador de Hábeas Corpus</h2>
-             <p><strong>Constitución Política. Art. 30. </strong>“Quien estuviere privado de su libertad, y creyere estarlo ilegalmente, tiene derecho a invocar ante cualquier autoridad judicial, en todo tiempo, por sí o por interpuesta persona, el Hábeas Corpus, el cual debe resolverse en el término de treinta y seis horas”.
-            </p>
+
               <small>Tus datos no seran almacenados en un servidor.</small>
               <br>
              <small>Los campos obligatorios van seguidos de <strong><abbr title ="Obligatorio">*</abbr></strong></small>
@@ -212,7 +213,6 @@
               <button id="botonGenerar" type="button" class="btn btn-warning" onclick="exportPDF()">Generar el Habeas Corpus</button>
             </div>
           </section> 
-          <button id='botonprueba'>prueba</button>
           </div>
           <!-- ================================ End Enviar  =========================== -->
         </div>
@@ -223,20 +223,29 @@
 
   <!-- ================================ End Main Area =========================== -->
   <!-- ================================ Start Footer =========================== -->
-  <footer class="bg-light text-center text-lg-start">
-
-    <!-- Start Copyright -->
-    <div class="text-center p-3">
-    © 2021 Copyright:
-    <a class="footerName" href="https://instagram.com/mateocostab">Mateo Costa</a>
-    <a>&</a>
-    <a class="footerName" href="https://instagram.com/jesuspinilla_/">Jesus Pinilla</a>
-    <h6 class="footerText">El modelo de Hábeas Corpus es autoría de Iván Daniel Otero Suárez, profesor de la Universidad Externado de Colombia</h6> 
+  <section class="footerBar">
+    <div class="container-fluid">
+    <footer class="footer">
+      <!-- Start Copyright -->
+      <div class="text-center p-3">
+      © 2021 Copyright:
+      <a class="footerName" href="https://instagram.com/mateocostab">Mateo Costa</a>
+      <a>&</a>
+      <a class="footerName" href="https://instagram.com/jesuspinilla_/">Jesus Pinilla</a>
+      <h6 class="footerText">El modelo de Hábeas Corpus es autoría de Iván Daniel Otero Suárez, profesor de la Universidad Externado de Colombia</h6> 
+      </div>
     </div>
-    <!-- End Copyright -->
-  </footer>
+      <!-- End Copyright -->
+    </footer>
+  </section>
   <!-- ================================ End Footer =========================== -->
+      <!-- js habeas-->
       <script src="./habeasCorpus.js"></script>
+      <!-- jsDPF-->
       <script src ="jspdf.min.js"></script>
+      <!-- jQuery -->
+      <script src="js/jquery.3.6.0.js"></script>
+      <!-- js bootstrap -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 </body>
 </html>
