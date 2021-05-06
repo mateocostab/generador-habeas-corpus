@@ -33,13 +33,13 @@ botonprueba.addEventListener('click',demo,true);
         iCondicionDe = document.querySelector('iCondicionDe'),
         iSituacion = document.querySelector('iSituacion'),
         iNumeroIdentificacion = document.querySelector('iNumeroIdentificacion'),
-        iConocimientoAutoridad = document.querySelector('iConocimientoAutoridad'),
-        iConocimientoIdAutoridad = document.querySelector('iConocimientoIdAutoridad'),
+        iConocimientoAutoridad = document.getElementById('iConocimientoAutoridad'),
+        iConocimientoIdAutoridad = document.getElementById('iConocimientoIdAutoridad'),
         iGeneroS = document.querySelector('iGeneroS'),
         iGeneroA = document.querySelector('iGeneroA')
 
-        let conocimientoAutoridad = iConocimientoAutoridad.value
-        let conocimientoIdAutoridad = iConocimientoIdAutoridad.value
+        var conocimientoAutoridad = iConocimientoAutoridad.value
+        var conocimientoIdAutoridad = iConocimientoIdAutoridad.value
 
         //Strings 
         var p1 = 'Sumado a ello, se deberán relatar de forma concreta y clara cada uno de los hechos relevantes respecto de la detención arbitraria.',
@@ -48,8 +48,9 @@ botonprueba.addEventListener('click',demo,true);
             p4 = 'Bien se dispuso por parte de la Corte Constitucional en Sentencia C 187 de 2006 que:',
             p5 = '“Una interpretación acorde con la Constitución Política supone que, después de invocado el hábeas corpus, la autoridad judicial encargada de conocer, deberá verificar la existencia de las condiciones que conducen a ordenar que el peticionario sea puesto en libertad. Tales condiciones son: i) que la persona esté privada de la libertad, y ii) que la privación de la libertad o la prolongación de la misma se haya dado con violación o quebrantamiento del orden constitucional y legal. Una vez demostrado que la privación de la libertad personal o la prolongación de la privación de la libertad son el resultado de actos contrarios a lo dispuesto por el ordenamiento constitucional o legal, la autoridad judicial competente deberá ordenar que la persona sea puesta inmediatamente en libertad”'
             //pdf
-    var doc = new jsPDF()
+    
     function exportPDF() {
+        var doc = new jsPDF()
     //Metodos
 
     if(conocimientoAutoridad === '2'){
