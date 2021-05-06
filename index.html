@@ -65,15 +65,15 @@
                <form id="infoSolicitante">
                <h3 class="formTitle ">Información del solicitante</h3>
                 <div class="datos-solicitante">
-                    <div class="input-group mb-3">
+                    <div class="form-group">
                           <span class="input-group-text" id="basic-addon1">Nombre del solicitante<abbr title ="Obligatorio">*</abbr></strong></span>
                           <input id="iNombreS" type="text" class="form-control" placeholder="Tu nombre completo" aria-label="Nombre completo" aria-describedby="basic-addon1" required>
                     </div>
-                    <div class="input-group mb-3">
+                    <div class="form-group">
                       <span class="input-group-text" id="basic-addon1">Correo electrónico<abbr title ="Obligatorio">*</abbr></strong></span>
                       <input id="iEmail"type="mail" class="form-control" placeholder="Tu correo electrónico" aria-label="Nombre completo" aria-describedby="basic-addon1" required>
                     </div>
-                    <div class="input-group mb-3">
+                    <div class="form-group">
                       <span class="input-group-text" id="genero_solicitante">Género<abbr title ="Obligatorio">*</abbr></strong></span>
                       <select id="iGeneroS" class="form-select" aria-label="Selecciona tu género" required>
                         <option value="1">Masculino</option>  
@@ -81,7 +81,7 @@
                         <option value="3">Otro</option>
                       </select>
                     </div>
-                    <div class="input-group mb-3">
+                    <div class="form-group">
                       <span class="input-group-text" id="basic-addon1">Documento de identidad<abbr title ="Obligatorio">*</abbr></strong></span>
                       <select class="form-select" id="iTipoDocumento" required>
                         <option value="1">C.C</option>
@@ -90,18 +90,18 @@
                       </select>
                       <input id="iNumeroCCS"type="text" minlenght="6" maxlength="10" class="form-control" placeholder="Numero de documento" aria-describedby="selectaria" required>
                     </div>
-                    <div class="input-group mb-3">
+                    <div class="form-group">
                       <span class="input-group-text" id="basic-addon1">Lugar de expedición<abbr title ="Obligatorio">*</abbr></strong></span>
                       <input id="iCiudadCC" type="text" class="form-control" placeholder="Lugar de expedición del documento" aria-label="numero" aria-describedby="basic-addon1" required>
                     </div>
-                    <div class="input-group mb-3">
+                    <div class="form-group">
                       <span class="input-group-text">¿Eres mayor de edad?<abbr title ="Obligatorio">*</abbr></strong></span>
                       <select id="iMayorEdad" class="form-select" aria-label="Mayoría de edad" required>
                         <option value="1">Sí</option>
                         <option value="2">No</option>
                       </select>
                       </div>          
-                    <div class="input-group mb-3">
+                    <div class="form-group">
                       <span class="input-group-text" id="basic-addon1">Actuas en condición de<abbr title ="Obligatorio">*</abbr></strong></span>
                       <select class="form-select" id="iCondicionDe" required>
                         <option value="1">Afectado</option>
@@ -110,19 +110,19 @@
                         <option value="4">Apoderado</option>  
                       </select>
                     </div>         
-                    <div class="input-group mb-3">
+                    <div class="form-group">
                       <span class="input-group-text" id="basic-addon1">Numero de celular<abbr title ="Obligatorio">*</abbr></strong></span>
                       <input id="iNumeroCelular" type="tel" class="form-control" placeholder="Tranquil@, no almacenamos tu información" aria-label="numero" aria-describedby="basic-addon1" required>
                     </div>
-                    <div class="input-group mb-3">
+                    <div class="form-group">
                       <span class="input-group-text" id="basic-addon1">Dirección del solicitante<abbr title ="Obligatorio">*</abbr></strong></span>
                       <input id="iDireccionS" type="text" class="form-control" placeholder="Tranquil@, no almacenamos tu información" aria-label="dirección" aria-describedby="basic-addon1" required>
                     </div>    
-                    <div class="input-group mb-3">
+                    <div class="form-group">
                       <span class="input-group-text" id="basic-addon1">Ciudad<abbr title ="Obligatorio">*</abbr></strong></span>
                       <input id="iCiudadS" type="text" class="form-control" placeholder="¿Desde donde realizas la solicitud?" aria-label="ciudad" aria-describedby="basic-addon1" required>
                     </div>
-                    <div class="input-group mb-3">
+                    <div class="form-group">
                       <span class="input-group-text" id="basic-addon1">Situación<abbr title ="Obligatorio">*</abbr></strong></span>
                       <select class="form-select" id="iSituacion" required>
                         <option value="1">Privación ilegal de la libertad</option>
@@ -136,11 +136,11 @@
              <section class="sectionAgredido">
               <form id="infoAgredido1">
               <h3 class="formTitle ">Información del agredido</h3>          
-               <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">Nombre del agredido<abbr title ="Obligatorio">*</abbr></strong></span>
+               <div class="form-group">
+                <span class="input-group-text" id="nombre_agredido">Nombre del agredido<abbr title ="Obligatorio">*</abbr></strong></span>
                 <input id="iNombreA" type="text" class="form-control" placeholder="¿A quien privaron de su libertad?" aria-label="nombre-agredido" aria-describedby="basic-addon1" required>
               </div>
-              <div class="input-group mb-3">
+              <div class="form-group">
                 <span class="input-group-text" id="genero_agredido">Género<abbr title ="Obligatorio">*</abbr></strong></span>
                 <select id='iGeneroA' class="form-select" aria-label="Selecciona tu género" required>
                   <option value="1">Masculino</option>  
@@ -148,11 +148,11 @@
                   <option value="3">Otro</option>
                 </select>
               </div>
-               <div class="input-group mb-3">
+               <div class="form-group">
                 <span class="input-group-text" id="basic-addon1">Autoridad que realizó la detención<abbr title ="Obligatorio">*</abbr></strong></span>
                 <input id="iAutoridadRealizo" type="text" class="form-control" placeholder="¿Quien hizo la detención?" aria-label="nombre-autoridad" aria-describedby="basic-addon1" required>              
               </div>
-              <div class="input-group mb-3">
+              <div class="form-group">
                 <span class="input-group-text" id="basic-addon1">¿Sabes cual es su N° de identificación?</span>
                 <select class="form-select" id="iConocimientoIdAutoridad">
                   <option value="1">Sí</option>
@@ -160,27 +160,27 @@
                 </select>
                 <input id="idAutoridad" type="text" class="form-control" placeholder="¿Cual es?" aria-label="identificacion-autoridad" aria-describedby="basic-addon1">
               </div>
-               <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">Autoridad que ordenó la detención</span>
+               <div class="form-group">
+                <span class="input-group-text" id="basic-addon1">¿Sabes que autoridad ordenó la detención?</span>
                 <select id="iConocimientoAutoridad" class="form-select" id="iNumeroidentificacion" required>
                   <option value="1">Sí</option>
                   <option value="2">No</option>
                 </select>   
                 <input id="iOrdenDetencion" type="text" class="form-control" placeholder="¿Quien dio la orden?" aria-label="orden-autoridad" aria-describedby="basic-addon1">           
               </div>
-              <div class="input-group mb-3">
+              <div class="form-group">
                 <span class="input-group-text" id="basic-addon1">Lugar de la detención<abbr title ="Obligatorio">*</abbr></span>
                 <input id="iLugarD" type="text" class="form-control" placeholder="¿Donde se realizo la detención?" aria-label="detencion-lugar" aria-describedby="basic-addon1" required>
               </div>
-              <div class="input-group mb-3">
+              <div class="form-group">
                 <span class="input-group-text" id="basic-addon1">Fecha y hora más exacta posible<abbr title ="Obligatorio">*</abbr></span>
                 <input id="iFecha"type="datetime-local" class="form-control" aria-label="detencion-fecha" aria-describedby="basic-addon1" required>
               </div>
-              <div class="input-group mb-3">
+              <div class="form-group">
                 <span class="input-group-text" id="basic-addon1">Días desde la detención<abbr title ="Obligatorio">*</abbr> (min: 0)</span>
                 <input id="iDiasTrans" type="number"  min="0" placeholder="# de días" class="form-control" aria-label="detencion-fecha" aria-describedby="basic-addon1">
               </div>
-              <div class="input-group mb-3">
+              <div class="form-group">
                 <span class="input-group-text" id="basic-addon1">Lugar de reclusión<abbr title ="Obligatorio">*</abbr></span>
                 <input id ='iLugarR'type="text" class="form-control" placeholder="¿Donde se encuentra recluida?" aria-label="reclusion-lugar" aria-describedby="basic-addon1" required>
               </div>
