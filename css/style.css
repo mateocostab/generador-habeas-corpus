@@ -19,7 +19,21 @@
     {
         padding: 0.5rem 1rem;
     }  
-     
+
+    @media screen and (max-width: 768px) {
+        .header_area .main-menu .navbar .navbar-brand
+        {
+            padding: 1%;
+            width: 100%;
+        }
+    
+        .header_area .main-menu .navbar
+        {
+            padding: 1%;
+            width: 100%;
+        }
+    }    
+
 /* end navigation */
 
 .container-fluid{

@@ -1,10 +1,10 @@
-var botonprueba =document.getElementById("botonprueba");
-function demo(){
-    var pdf = new jsPDF()
-    pdf.text('Hola',10,10)
-    pdf.save('hola.pdf')
-}
-botonprueba.addEventListener('click',demo,true);
+// var botonprueba =document.getElementById("botonprueba");
+// function demo(){
+//     var pdf = new jsPDF()
+//     pdf.text('Hola',10,10)
+//     pdf.save('hola.pdf')
+// }
+// botonprueba.addEventListener('click',demo,true); 
     //variables
     //labels
 
