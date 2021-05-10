@@ -7,6 +7,7 @@ function exportPDF() {
     var year =date.getUTCFullYear();
     var fecha = day+'/' +month +'/' +year; 
     var mayoriaEdad ='mayor'
+    var tipoDocumento ='C.C'
     //Ponle los nombre de los input que tengas 
     var iNombreS = document.getElementById('iNombreS').value,
         iNombreA = document.getElementById('iNombreA').value,
@@ -25,7 +26,7 @@ function exportPDF() {
         iHechos = document.getElementById('textoHechos').value
 
         //Selects
-        iTipoDocumento = document.querySelector('iTipoDocumento'),
+        iTipoDocumento = document.getElementById('iTipoDocumento'),
         iMayorEdad = document.getElementById('iMayorEdad'),
         iCondicionDe = document.getElementById('iCondicionDe'),
         iSituacion = document.getElementById('iSituacion'),
@@ -42,6 +43,7 @@ function exportPDF() {
         var generoA = iGeneroA.value
         var situacion = iSituacion.value
         var mayor = iMayorEdad.value
+        var tipo = iTipoDocumento.value
 
     if(mayor === '2'){
         mayoriaEdad='menor'
@@ -53,6 +55,13 @@ function exportPDF() {
     if(conocimientoIdAutoridad ==='2'){
         iConocimientoIdAutoridad = 'con numero de identificacion desconocido'
     }
+    if(tipo ==='2'){
+        tipoDocumento ='T.I'
+    }
+    if(tipo ==='3'){
+        tipoDocumento= 'C.E'
+    }
+
     
         //pdf
         var doc = new jsPDF(
@@ -68,17 +77,17 @@ function exportPDF() {
         p4 = '“Una interpretación acorde con la Constitución Política supone que, después de invocado el hábeas corpus, la autoridad judicial encargada de conocer, deberá verificar la existencia de las condiciones que conducen a ordenar que el peticionario sea puesto en libertad. Tales condiciones son: i) que la persona esté privada de la libertad, y ii) que la privación de la libertad o la prolongación de la misma se haya dado con violación o quebrantamiento del orden constitucional y legal. Una vez demostrado que la privación de la libertad personal o la prolongación de la privación de la libertad son el resultado de actos contrarios a lo dispuesto por el ordenamiento constitucional o legal, la autoridad judicial competente deberá ordenar que la persona sea puesta inmediatamente en libertad”'
 
         //Strings de Caso 1
-        var c1p1="Yo, "+ iNombreS + ', en mi condición de ' + condicion + ', '+ mayoriaEdad + ' y vecino de la ciudad de ' + iCiudadS + ', identificado con cédula de ciudadanía'+ iNumeroCCS +' de '+ iCiudadCC + ', por medio del presente escrito acudo ante la autoridad judicial para solicitar se sirva dar trámite a la petición de HÁBEAS CORPUS en favor de ' + iNombreA + ', con fundamento en los siguientes:',
+        var c1p1="Yo, "+ iNombreS + ', en mi condición de ' + condicion + ', '+ mayoriaEdad + ' y vecino de la ciudad de ' + iCiudadS + ', identificado con '  + tipoDocumento + iNumeroCCS +' de '+ iCiudadCC + ', por medio del presente escrito acudo ante la autoridad judicial para solicitar se sirva dar trámite a la petición de HÁBEAS CORPUS en favor de ' + iNombreA + ', con fundamento en los siguientes:',
             c1p2='El señor ' + iNombreA + ' fue aprendido por ' + iAutoridadRealizo + ' el pasado ' + iFecha + 'en' + iCiudadS + 'por orden de' + iOrdenDetencion +  'Desde entonces hasta la fecha han transcurrido ' + iDiasTrans +', sin que el mismo haya sido indagado o resuelta su situación jurídica.',
             c1p3='El señor ' + iNombreA + ' se encuentra recluido en ' + iLugarD + ', a partir del día ' + iFecha + ' y el funcionario que ordenó su aprehensión es ' + iOrdenDetencion + ' quien se desempeña como ' + iAutoridadRealizo,
             c1p4= 'Efectuada la verificación de la violación de las garantías constitucionales y legales, solicito a usted ordenar la libertad inmediata del señor ' + iNombreA + ' y compulsar copias para que se inicien las investigaciones a que hubiere lugar'
         //Strings de Caso 2
-        var c2p1="Yo,"+ iNombreS + ', en mi condición de ' + condicion + ', ' + mayoriaEdad + ' y vecina de la ciudad de ' + iCiudadS + ', identificada con cédula de ciudadanía '+ iNumeroCCS +' de '+ iCiudadCC + ', por medio del presente escrito acudo ante la autoridad judicial para solicitar se sirva dar trámite a la petición de HÁBEAS CORPUS en favor de ' + iNombreA + ', con fundamento en los siguientes:',
+        var c2p1="Yo,"+ iNombreS + ', en mi condición de ' + condicion + ', ' + mayoriaEdad + ' y vecina de la ciudad de ' + iCiudadS + ', identificada con ' + tipoDocumento + iNumeroCCS +' de '+ iCiudadCC + ', por medio del presente escrito acudo ante la autoridad judicial para solicitar se sirva dar trámite a la petición de HÁBEAS CORPUS en favor de ' + iNombreA + ', con fundamento en los siguientes:',
             c2p2='La señora ' + iNombreA + ' fue aprendida por ' + iAutoridadRealizo + ' el pasado ' + iFecha + 'en' + iCiudadS + 'por orden de' + iOrdenDetencion +  '. Desde entonces hasta la fecha han transcurrido ' + iDiasTrans +', sin que la misma haya sido indagada o resuelta su situación jurídica.',
             c2p3='La señora ' + iNombreA + ' se encuentra recluida en ' + iLugarD + ', a partir del día '+ iFecha + ' y el funcionario que ordenó su aprehensión es ' + iOrdenDetencion + ' quien se desempeña como ' + iAutoridadRealizo,
             c2p4='Efectuada la verificación de la violación de las garantías constitucionales y legales, solicito a usted ordenar la libertad inmediata de la señora ' + iNombreA + ' y compulsar copias para que se inicien las investigaciones a que hubiere lugar'
         //Strings de Caso 3
-        var c3p1="Yo, "+ iNombreS + ', en mi condición de ' + condicion + ', '+ mayoriaEdad +' y vecine de la ciudad de ' + iCiudadS + ', identificade con cédula de ciudadanía '+ iNumeroCCS +' de '+ iCiudadCC + ', por medio del presente escrito acudo ante la autoridad judicial para solicitar se sirva dar trámite a la petición de HÁBEAS CORPUS en favor de ' + iNombreA + ', con fundamento en los siguientes:',
+        var c3p1="Yo, "+ iNombreS + ', en mi condición de ' + condicion + ', '+ mayoriaEdad +' y vecine de la ciudad de ' + iCiudadS + ', identificade con ' + tipoDocumento + iNumeroCCS +' de '+ iCiudadCC + ', por medio del presente escrito acudo ante la autoridad judicial para solicitar se sirva dar trámite a la petición de HÁBEAS CORPUS en favor de ' + iNombreA + ', con fundamento en los siguientes:',
             c3p2=iNombreA + ' fue aprendide por' + iAutoridadRealizo + ' el pasado ' + iFecha + ' en ' + iCiudadS + 'por orden de ' + iOrdenDetencion +  '. Desde entonces hasta la fecha han transcurrido ' + iDiasTrans + ', sin que le misme haya sido indagade o resuelta su situación jurídica.',
             c3p3=iNombreA + ' se encuentra recluide en ' + iLugarD + ', a partir del día ' + iFecha + ' y el funcionario que ordenó su aprehensión es ' + iOrdenDetencion + ' quien se desempeña como ' + iAutoridadRealizo,
             c3p4='Efectuada la verificación de la violación de las garantías constitucionales y legales, solicito a usted ordenar la libertad inmediata de ' + iNombreA + ' y compulsar copias para que se inicien las investigaciones a que hubiere lugar'
